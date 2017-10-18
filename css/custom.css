@@ -1,0 +1,27 @@
+.play-score {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.play-score table {
+  height: 100%;
+  width: 100%;
+}
+
+.play-score tr:first-of-type {
+  vertical-align: top;
+}
+
+.play-score tr:last-of-type {
+  vertical-align: bottom;
+}
+
+.play-score tr td:first-of-type {
+  text-align: left;
+}
+
+.play-score tr td:last-of-type {
+  text-align: right;
+}
