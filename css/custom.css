@@ -1,8 +1,19 @@
 .play-score {
   height: 100px;
   width: 100px;
+  position: relative;
   border-style: solid;
   border-width: 1px;
+  font-family: 'Short Stack', cursive;
+  font-size: 22px;
+}
+
+.play-score .center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .play-score table {
