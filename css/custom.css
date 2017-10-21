@@ -1,11 +1,24 @@
-.play-score {
-  height: 100px;
-  width: 100px;
+.container {
   position: relative;
-  border-style: solid;
-  border-width: 1px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.play-score {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 100px;
   font-family: 'Short Stack', cursive;
   font-size: 22px;
+  border: solid 1px;
 }
 
 .play-score .center-text {
@@ -17,8 +30,9 @@
 }
 
 .play-score table {
-  height: 100%;
+  position: absolute;
   width: 100%;
+  height: 100%;
 }
 
 .play-score tr:first-of-type {
@@ -35,4 +49,15 @@
 
 .play-score tr td:last-of-type {
   text-align: right;
+}
+
+.base-path {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform: rotate(45deg) translateX(66%);
+}
+
+.base-path-hr {
+  background: black;
 }
