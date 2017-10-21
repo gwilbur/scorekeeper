@@ -40,10 +40,18 @@ let app = new Vue({
       <h1>Scorekeeper</h1>
       <play-score
         centerText="6-4-3"
-        topLeftText="WP"
-        topRightText="SB"
-        bottomLeftText="CS"
+      />
+      <play-score
         bottomRightText="1B"
+        basePath="1B"
+      />
+      <play-score
+        bottomRightText="2B"
+        basePath="2B"
+      />
+      <play-score
+        bottomRightText="3B"
+        basePath="3B"
       />
       <play-score
         bottomRightText="HR"

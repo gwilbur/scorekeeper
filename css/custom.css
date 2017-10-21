@@ -26,6 +26,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  z-index: 1;
 }
 
 .play-score table {
@@ -54,9 +55,30 @@ h1 {
   position: absolute;
   width: 50%;
   height: 50%;
+  box-sizing: border-box;
   transform: rotate(45deg) translateX(70.7%);
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgrey;
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+}
+
+.base-path-1b {
+  border-right: solid;
+}
+
+.base-path-2b {
+  border-right: solid;
+  border-top: solid;
+}
+
+.base-path-3b {
+  border-right: solid;
+  border-top: solid;
+  border-left: solid;
 }
 
 .base-path-hr {
   background: black;
+  border-color: black;
 }
