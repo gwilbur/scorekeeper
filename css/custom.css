@@ -1,15 +1,9 @@
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
 h1 {
   text-align: center;
 }
+
+/* play-score
+   ========================================================================== */
 
 .play-score {
   position: relative;
@@ -50,6 +44,9 @@ h1 {
 .play-score tr td:last-of-type {
   text-align: right;
 }
+
+/* base-path
+   ========================================================================== */
 
 .base-path {
   position: absolute;
