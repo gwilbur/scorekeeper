@@ -1,0 +1,15 @@
+{
+  "name": "scorekeeper",
+  "description": "Score a baseball game.",
+  "version": "0.0.1",
+  "author": "Greg Wilbur",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "vue": "^2.4.4"
+  },
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
+}

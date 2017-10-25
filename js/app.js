@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 Vue.component('play-score', {
   template: `
     <div class="play-score">
