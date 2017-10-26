@@ -1,8 +1,43 @@
-h1 {
-  text-align: center;
-  font-family: 'Quicksand', sans-serif;
-}
+<template>
+  <div class="play-score">
+    <div class="center-text">{{ centerText }}</div>
+    <table>
+      <tr><td>{{ topLeftText }}</td><td>{{ topRightText }}</td></tr>
+      <tr><td>{{ bottomLeftText }}</td><td>{{ bottomRightText }}</td></tr>
+    </table>
+    <div :class="basePathClass"></div>
+  </div>
+</template>
 
+<script>
+export default {
+  props: {
+    centerText: {type: String, default: ''},
+    topLeftText: {type: String, default: ''},
+    topRightText: {type: String, default: ''},
+    bottomLeftText: {type: String, default: ''},
+    bottomRightText: {type: String, default: ''},
+    basePath: {
+      type: String,
+      default: '',
+      validator: function(value) {
+        return ['', '1B', '2B', '3B', 'HR'].indexOf(value) !== -1;
+      }
+    }
+  },
+  computed: {
+    basePathClass: function() {
+      if (this.basePath === '') {
+        return 'base-path';
+      } else {
+        return 'base-path base-path-' + this.basePath.toLowerCase();
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
 /* play-score
    ========================================================================== */
 
@@ -80,3 +115,4 @@ h1 {
   background: black;
   border-color: black;
 }
+</style>
